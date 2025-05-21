@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css" />
+  </head>
+  <body>
+    <h1 id="head">
+      Course Registration Form
+      <form action=""></form>
+    </h1>
+    <form action="response.html" autocomplete="">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="">First name</label></td>
+            <td>
+              <input
+                type="text"
+                name="FN"
+                required
+                placeholder="Pallavi"
+                size="10"
+                maxlength="10 "
+              />
+              <span>Enter your Name</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Sur name</label></td>
+            <td>
+              <input
+                type="text"
+                name="LN"
+                placeholder="EX:s"
+                size="15"
+                optional
+              />
+              <span>Enter your sur Name</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Mobile number</label></td>
+            <td>
+              <input
+                type="tel"
+                name="mob"
+                placeholder="EX:8765789654"
+                size="15"
+                required
+              />
+              <span>Enter your mobile number</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Email</label></td>
+            <td>
+              <input
+                type="email"
+                name="mail"
+                size="15"
+                required
+                placeholder="pallu@gmail.com"
+              />
+              <span>Enter your email</span>
+              <img
+                id="valid"
+                src="https://i.pinimg.com/1200x/7b/dd/1b/7bdd1bc7db7fd48025d4e39a0e2f0fd8.jpg"
+                alt=""
+              />
+              <img
+                id="invalid"
+                src="https://media.istockphoto.com/id/1039939018/vector/wrong-mark-line-icon-one-of-set-web-icons.jpg?s=612x612&w=0&k=20&c=p5zCbRQaUQHkFi6yBPWLYoeQMEQ4u8cnMyu0xqktQbE="
+                alt=""
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Password</label></td>
+            <td>
+              <input
+                type="password"
+                name="pwd"
+                placeholder="min 8 characters"
+                min="8"
+                size="15"
+                id=""
+                minlength="8"
+                required
+              />
+              <span>Enter your password</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Confirm password</label></td>
+            <td>
+              <input
+                type="password"
+                name="cpwd"
+                placeholder="min 8 characters"
+                size="15"
+                required
+              />
+              <span>Enter your c.password</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">DOB</label></td>
+            <td><input type="date" name="age" required /></td>
+          </tr>
+          <tr>
+            <td><label for="">age</label></td>
+            <td>
+              <input type="number" name="age" required min="18" max="25" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Gender</label></td>
+            <td>
+              <input type="radio" name="gender" id="" />
+              <label for="Male">Male</label>
+              <input type="radio" name="gender" id="" />
+              <label for="Female">Female</label>
+              <input type="radio" name="gender" id="" />
+              <label for="Others">Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for=""> Select Country</label></td>
+            <td>
+              <select name="" id="">
+                <option value="">INDIA</option>
+                <option value="">USA</option>
+                <option value="">Germany</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Upload Picture</label></td>
+            <td><input type="file" /></td>
+          </tr>
+          <tr>
+            <td><input type="reset" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+
+    <form action="">
+      <fieldset>
+        <legend>Course Details</legend>
+        <label for="">Select Course</label> <br />
+        <select name="" id="">
+          <option value="">JAVA</option>
+          <option value="">Python</option>
+          <option value="">C</option>
+        </select>
+        <br />
+        <label for="">Delivery Mode</label>
+        <input type="radio" name="mode" id="" />
+        <label for="Online">Online</label>
+        <input type="radio" name="mode" id="" />
+        <label for="Offline">Offline</label> <br />
+        <label for="">Institution Name</label>
+        <input type="text" value="Tap Academy" readonly /><br />
+        <label for="">Comments</label> <br />
+        <textarea name="" id="" rows="5" cols="35"></textarea>
+      </fieldset>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
